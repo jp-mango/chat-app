@@ -4,13 +4,13 @@ This repository contains a simple TCP chat application written in Go. The projec
 
 ## Current Implementation
 
-- **Server (`/server/main.go`)**:
+- **Server (`/server/tcp_server.go`)**:
 
   - Listens for incoming TCP connections on port 8080.
   - Accepts connections and handles them concurrently.
   - Broadcasts messages from any client to all connected clients.
 
-- **Client (`/client/main.go`)**:
+- **Client (`/client/tcp_client.go`)**:
   - Connects to the server on `localhost:8080`.
   - Sends messages to the server and receives broadcast messages.
 
@@ -45,8 +45,8 @@ This repository contains a simple TCP chat application written in Go. The projec
 
 ## Running the Application
 
-- Start the server: Navigate to `/tcp-chat-app/server` and run `./tcp_server`.
-- Start the client: In a new terminal, navigate to `/tcp-chat-app/client` and run `./tcp_client`.
+- Start the server: Navigate to `/chat-room/server` and run `./tcp_server`.
+- Start the client: In a new terminal, navigate to `/chat-room/client` and run `./tcp_client`.
 - You can open multiple instances of the client to simulate a chat room.
 
 ---
