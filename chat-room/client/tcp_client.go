@@ -32,6 +32,6 @@ func readMessages(conn net.Conn) {
 			fmt.Println("Disconnected from server")
 			os.Exit(0)
 		}
-		fmt.Println("New message: " + message)
+		fmt.Println("New message: \n" + message)
 	}
 }
